@@ -107,7 +107,7 @@ using System.Runtime.InteropServices;
 [assembly: TypeForwardedTo(typeof(Graphics))]
 [assembly: TypeForwardedTo(typeof(GraphicsUnit))]
 [assembly: TypeForwardedTo(typeof(Icon))]
-//[assembly: TypeForwardedTo(typeof(IconConverter))]
+[assembly: TypeForwardedTo(typeof(IconConverter))]
 [assembly: TypeForwardedTo(typeof(IDeviceContext))]
 [assembly: TypeForwardedTo(typeof(Image))]
 //[assembly: TypeForwardedTo(typeof(ImageAnimator))]
