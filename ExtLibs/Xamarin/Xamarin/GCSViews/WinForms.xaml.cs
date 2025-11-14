@@ -603,9 +603,10 @@ namespace Xamarin.GCSViews
 
                     Thread.Yield();
                 };
-
+#if !__ANDROID__
                 MissionPlanner.Program.Main(new string[0]);
-                
+#endif
+
                 System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
             });
             winforms.Start();
