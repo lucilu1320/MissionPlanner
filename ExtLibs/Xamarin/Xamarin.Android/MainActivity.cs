@@ -167,12 +167,17 @@ namespace Xamarin.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            SetSupportActionBar((Toolbar)FindViewById(ToolbarResource));
-
             this.Window.AddFlags(WindowManagerFlags.Fullscreen | WindowManagerFlags.TurnScreenOn |
                                  WindowManagerFlags.HardwareAccelerated);
 
             base.OnCreate(savedInstanceState);
+
+            // Set toolbar AFTER base.OnCreate so views are inflated
+            var toolbar = FindViewById<Toolbar>(ToolbarResource);
+            if (toolbar != null)
+            {
+                SetSupportActionBar(toolbar);
+            }
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
