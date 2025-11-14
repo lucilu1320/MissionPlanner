@@ -169,6 +169,7 @@
     <Compile Include="USBDevices.cs" />
   </ItemGroup>
   <ItemGroup>
+    <!-- TEMPORARILY DISABLED - Testing if these cause crash
     <AndroidNativeLibrary Include="lib\arm64-v8a\libarduplane.so" />
     <AndroidNativeLibrary Include="lib\arm64-v8a\libardurover.so" />
     <AndroidNativeLibrary Include="lib\arm64-v8a\libardusub.so" />
@@ -178,6 +179,7 @@
     <AndroidNativeLibrary Include="lib\armeabi-v7a\libardurover.so" />
     <AndroidNativeLibrary Include="lib\armeabi-v7a\libardusub.so" />
     <AndroidNativeLibrary Include="lib\x86\libarducopter.so" />
+    -->
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
