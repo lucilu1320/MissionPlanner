@@ -18,7 +18,7 @@ namespace MissionPlanner
 
             if (Program.Logo != null)
             {
-#if !ANDROID
+#if !__ANDROID__
                 pictureBox1.BackgroundImage = MissionPlanner.Properties.Resources.bgdark;
 #endif
                 pictureBox1.Image = Program.Logo;

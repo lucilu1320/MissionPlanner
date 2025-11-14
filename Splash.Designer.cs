@@ -69,10 +69,10 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
-            // 
+            //
             // Splash
             //
-#if !ANDROID
+#if !__ANDROID__
             this.BackgroundImage = global::MissionPlanner.Properties.Resources.splashdark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 #endif
@@ -82,7 +82,7 @@
             this.Controls.Add(this.TXT_version);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-#if !ANDROID
+#if !__ANDROID__
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 #endif
             this.MaximizeBox = false;
