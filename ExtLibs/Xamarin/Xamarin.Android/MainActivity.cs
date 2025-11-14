@@ -167,10 +167,10 @@ namespace Xamarin.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            base.OnCreate(savedInstanceState);
+
             this.Window.AddFlags(WindowManagerFlags.Fullscreen | WindowManagerFlags.TurnScreenOn |
                                  WindowManagerFlags.HardwareAccelerated);
-
-            base.OnCreate(savedInstanceState);
 
             // Set toolbar AFTER base.OnCreate so views are inflated
             var toolbar = FindViewById<Toolbar>(ToolbarResource);
