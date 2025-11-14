@@ -71,17 +71,20 @@
             this.pictureBox1.Visible = false;
             // 
             // Splash
-            // 
-
+            //
+#if !ANDROID
             this.BackgroundImage = global::MissionPlanner.Properties.Resources.splashdark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+#endif
             this.ClientSize = new System.Drawing.Size(584, 336);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TXT_version);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+#if !ANDROID
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+#endif
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(600, 375);
             this.MinimizeBox = false;
