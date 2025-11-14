@@ -167,17 +167,14 @@ namespace Xamarin.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            base.OnCreate(savedInstanceState);
+            // ✅ Call SetSupportActionBar BEFORE base.OnCreate - matching Play Store APK
+            SetSupportActionBar((Toolbar)FindViewById(ToolbarResource));
 
+            // ✅ Call Window.AddFlags BEFORE base.OnCreate - matching Play Store APK
             this.Window.AddFlags(WindowManagerFlags.Fullscreen | WindowManagerFlags.TurnScreenOn |
                                  WindowManagerFlags.HardwareAccelerated);
 
-            // Set toolbar AFTER base.OnCreate so views are inflated
-            var toolbar = FindViewById<Toolbar>(ToolbarResource);
-            if (toolbar != null)
-            {
-                SetSupportActionBar(toolbar);
-            }
+            base.OnCreate(savedInstanceState);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
