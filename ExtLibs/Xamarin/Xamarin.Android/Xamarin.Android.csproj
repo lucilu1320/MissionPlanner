@@ -98,6 +98,7 @@
     <AndroidStoreUncompressedFileExtensions>
     </AndroidStoreUncompressedFileExtensions>
     <AndroidLinkTool>r8</AndroidLinkTool>
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotSpatial.Projections">
