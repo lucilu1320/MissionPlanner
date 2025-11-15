@@ -129,20 +129,19 @@
     <PackageReference Include="System.Threading.Tasks.Extensions">
       <Version>4.6.3</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.AppCompat.Resources">
-      <Version>1.1.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.MediaRouter">
-      <Version>1.6.0.3</Version>
-    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1" />
     <PackageReference Include="Xamarin.AndroidX.Core" Version="1.12.0.3" />
+    <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0.6" />
+    <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.6.0" />
+    <PackageReference Include="Xamarin.AndroidX.Fragment" Version="1.6.2" />
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.7.0" />
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.7.0.1" />
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel" Version="2.7.0.3" />
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModelSavedState" Version="2.7.0.3" />
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.6.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1" />
-    <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0.6" />
-    <PackageReference Include="Xamarin.AndroidX.Fragment" Version="1.6.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractUnixEndPoint.cs" />
