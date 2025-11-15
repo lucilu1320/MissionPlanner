@@ -129,12 +129,6 @@
     <PackageReference Include="System.Threading.Tasks.Extensions">
       <Version>4.6.3</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.Annotations">
-      <Version>28.0.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.Collections">
-      <Version>28.0.0.3</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.AppCompat.Resources">
       <Version>1.1.0.3</Version>
     </PackageReference>
@@ -146,11 +140,9 @@
       <Version>1.6.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1" />
+    <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0.6" />
+    <PackageReference Include="Xamarin.AndroidX.Fragment" Version="1.6.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractUnixEndPoint.cs" />
