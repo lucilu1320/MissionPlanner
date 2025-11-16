@@ -97,8 +97,9 @@
     <AndroidEnableSGenConcurrent>false</AndroidEnableSGenConcurrent>
     <AndroidStoreUncompressedFileExtensions>
     </AndroidStoreUncompressedFileExtensions>
-    <AndroidLinkTool>r8</AndroidLinkTool>
+    <AndroidLinkTool>d8</AndroidLinkTool>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidEnableProguard>false</AndroidEnableProguard>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotSpatial.Projections">
