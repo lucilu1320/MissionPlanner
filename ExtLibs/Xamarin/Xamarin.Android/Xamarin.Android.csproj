@@ -98,7 +98,7 @@
     <AndroidStoreUncompressedFileExtensions>
     </AndroidStoreUncompressedFileExtensions>
     <AndroidLinkTool>d8</AndroidLinkTool>
-    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <AndroidEnableProguard>false</AndroidEnableProguard>
   </PropertyGroup>
   <ItemGroup>
